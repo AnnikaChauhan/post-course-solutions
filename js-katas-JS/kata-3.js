@@ -2,7 +2,7 @@
 
 //your solution for kata-2 can handle several duplicates
 
-class DuplicateValueFinder {
+export default class DuplicateValueFinder {
     constructor(array){
         this.array = array.sort((a,b) => a - b);
         this.duplicateNumbers = [];
@@ -19,6 +19,7 @@ class DuplicateValueFinder {
     }
 }
 
+/*
 const firstTestArray = new DuplicateValueFinder([1,3,3,5]);
 console.log(firstTestArray.getTheDuplicates());
 
@@ -27,3 +28,4 @@ console.log(secondTestArray.getTheDuplicates());
 
 const thirdTestArray = new DuplicateValueFinder([3,5]);
 console.log(thirdTestArray.getTheDuplicates());
+*/

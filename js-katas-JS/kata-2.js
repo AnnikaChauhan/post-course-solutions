@@ -4,7 +4,7 @@
     //sort the array
     //loop through the array and if the value of index minus index - 1 is 0 then push it into an array of dups
 
-class DuplicateValueFinder {
+export default class DuplicateValueFinder {
     constructor(array){
         this.array = array.sort((a,b) => a - b);
         this.duplicateNumbers = [];
@@ -21,6 +21,7 @@ class DuplicateValueFinder {
     }
 }
 
+/*
 const firstTestArray = new DuplicateValueFinder([1,3,3,5]);
 console.log(firstTestArray.getTheDuplicates());
 
@@ -29,3 +30,4 @@ console.log(secondTestArray.getTheDuplicates());
 
 const thirdTestArray = new DuplicateValueFinder([3,5]);
 console.log(thirdTestArray.getTheDuplicates());
+*/
