@@ -1,0 +1,16 @@
+{
+  "name": "post-course-solutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AnnikaChauhan/post-course-solutions.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "jest": "^25.4.0"
+  }
+}

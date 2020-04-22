@@ -12,15 +12,17 @@
             //if not do the above loop
 
 class FindTheMissingNumbers {
+    array: number [];
+    missingNumbers: number [];
     constructor(array){
         this.array = array.sort((a, b) => a - b);
         this.missingNumbers = [];
     }
 
-    pushMissingNumberIntoArray = (number) => {
+    pushMissingNumberIntoArray = (number: number): void => {
         for(let i = (number - 1); i > 0; i--){
-            let topEndValue = this.array[i];
-            let bottomEndValue = this.array[i-1];
+            let topEndValue: number = this.array[i];
+            let bottomEndValue: number = this.array[i-1];
             if(topEndValue - bottomEndValue !== 1){
                 for(let i = topEndValue; i > (bottomEndValue + 1); i--){
                     this.missingNumbers.push(i - 1);
@@ -29,12 +31,12 @@ class FindTheMissingNumbers {
         }
     }
 
-    missingNumberCalculation = () => {
+    missingNumberCalculation = (): number[] => {
         const numberOfItems = this.array.length;
         const differenceBetweenFirstAndLastNumberInArray = this.array[numberOfItems - 1] - this.array[0];
         const itemsThatShouldBeInArray = differenceBetweenFirstAndLastNumberInArray + 1;
         if(numberOfItems === itemsThatShouldBeInArray){
-             return 'no missing numbers here';
+             return [];
         } else {
             this.pushMissingNumberIntoArray(numberOfItems);
             return this.missingNumbers.sort((a, b) => a - b);

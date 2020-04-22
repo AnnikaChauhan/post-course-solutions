@@ -14,3 +14,11 @@
 14. How do you swap two numbers without using a third variable?
 15. How do you find all permutations of a string?
 16. How do you check if a string contains only digits?
+
+Not Done
+04. How do you remove duplicates from an array in place? - take three, use the array of dups to remove
+10. How do you print the first non-repeated character from a string?
+12. How can a given string be reversed using recursion?
+13. How do you check if two strings are a rotation of each other?
+14. How do you swap two numbers without using a third variable?
+15. How do you find all permutations of a string?

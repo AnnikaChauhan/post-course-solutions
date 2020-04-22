@@ -11,7 +11,7 @@
             //if a COUNT of all of the total numbers matches the difference (or something similar) CHILL
             //if not do the above loop
 
-class FindTheMissingNumbers {
+export default class FindTheMissingNumbers {
     constructor(array){
         this.array = array.sort((a, b) => a - b);
         this.missingNumbers = [];
@@ -43,20 +43,16 @@ class FindTheMissingNumbers {
 
 }
 
-//no numbers missing
+/*
 const firstTestArray = new FindTheMissingNumbers([1,2,3,4,5,6,7,8,9]);
-//console.log(firstTestArray.array);
 console.log(firstTestArray.missingNumberCalculation());
 
-//some numbers missing and wrong order
 const secondTestArray = new FindTheMissingNumbers([2,3,9,8]);
-// console.log(secondTestArray.array);
 console.log(secondTestArray.missingNumberCalculation());
 
-//lots of numbers missing right order
 const thirdTestArray = new FindTheMissingNumbers([2,4,6,8,10,12,14,16,20]);
 console.log(thirdTestArray.missingNumberCalculation());
 
-// lots of numbers missing, NOT starting from lowest number
 const fourthTestArray = new FindTheMissingNumbers([11,5,7,13]);
 console.log(fourthTestArray.missingNumberCalculation());
+*/
