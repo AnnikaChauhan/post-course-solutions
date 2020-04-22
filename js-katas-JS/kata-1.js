@@ -8,7 +8,7 @@
             //IF (z-1)-1 is equal to y, then next loop
             //ELSE recursively loop back through
         //initially do z - x
-            //if a COUNT of all of the total numbers matches the difference (or something similar) CHILL
+            //if a COUNT of all of the total numbers matches the difference (or something similar) ok
             //if not do the above loop
 
 export default class FindTheMissingNumbers {
